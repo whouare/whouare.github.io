@@ -1,0 +1,7 @@
+ <!DOCTYPE html>
+     <script>
+       // 获取目标URL（需URL编码传递）
+       const target = decodeURIComponent(new URLSearchParams(location.search).get('url'));
+       // 立即跳转（微信不会二次拦截）
+       window.location.href = target;
+     </script>
